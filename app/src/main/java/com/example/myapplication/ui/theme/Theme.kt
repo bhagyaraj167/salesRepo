@@ -4,6 +4,7 @@ import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorPalette = darkColorScheme(
@@ -12,17 +13,16 @@ private val DarkColorPalette = darkColorScheme(
 )
 
 private val LightColorPalette = lightColorScheme(
-    primary = Purple500,
-    secondary = Teal200,
-
-    /* Other default colors to override
-    background = Color.White,
+    primary = primary1,
+    secondary = secondary1,
+    background = backgroundColor,
     surface = Color.White,
+    error = Color.Red,
     onPrimary = Color.White,
-    onSecondary = Color.Black,
+    onSecondary = Color.White,
     onBackground = Color.Black,
     onSurface = Color.Black,
-    */
+    onError = Color.White,
 )
 
 @Composable
